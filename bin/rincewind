@@ -1,0 +1,31 @@
+#!/bin/bash
+# Script: Main script
+
+# Main config file
+set -a
+source $__rincewind/conf/main.conf
+set +a
+#! $mconf_bashexec
+
+#echo $args_return
+if [ ! -z "$conf" ]; then
+        source $conf # config file in the local directory can override the default ones
+fi
+
+
+cwd=`pwd`
+#cwd=`readlink -f $cwd`
+export cwd=$cwd
+export command="$@"
+
+#export commandName=$(readlink -f `echo $0`)
+
+# export variables
+set -a # exports the variables as environment variables --> Useful for R scripts
+#source $__installdir/src/basic_functions.sh
+#source $__installdir/src/general_args.sh
+
+set +a # switch it back off
+
+set -Eo pipefail
+python3 $__installdir/bin/mkcommand.py $command

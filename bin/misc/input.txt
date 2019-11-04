@@ -1,0 +1,9 @@
+ctrl_a.fwd.bw	ctrl_a	ctrl	100,100,100
+ctrl_a.rev.bw	ctrl_a	ctrl	100,100,100
+ctrl_b.fwd.bw	ctrl_b	ctrl	100,101,101
+ctrl_b.rev.bw	ctrl_b	ctrl	100,101,102
+test_a.fwd.bw	test_a	test	100,100,100
+test_a.rev.bw	test_a	test	100,100,100
+test_b.fwd.bw	test_b	test	100,101,101
+test_b.rev.bw	test_b	test	100,101,102
+

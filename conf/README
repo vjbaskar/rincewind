@@ -1,0 +1,3 @@
+main.conf = main configuration file
+command_line_options.txt  = a tsv for command line options
+commands.json = a json file containing all the commands in the package

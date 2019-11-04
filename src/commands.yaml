@@ -1,0 +1,7 @@
+command_name : 	searchfile
+command : find . -name {filename} -print
+mandatory_args :
+	- filename
+optional_args :
+	- title
+is_multiple : 0

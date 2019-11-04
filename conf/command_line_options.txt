@@ -1,0 +1,26 @@
+short	long	type	description	example
+t	title	general	 title of project	project_x
+c	comments	general	 user comments that can be added to metadata. Only alpha-numerics	running_alignment
+s	sampleFile	general	 samplefile.csv	samplefiles
+O	outpt	general	 outpt	
+o	organism	general	organism	
+g	gtf	general	 gtf file	
+r	paired	general	 paired reads or not	"could be human, hs, mouse, mm, grch38 etc"
+v	qval	general	 pvalue or q value cut off	gene definition file in gff2 format
+u	conf	general	 configuration file	"0 = unpaired, 1 = paired"
+y	chrType	general	 chromosome type	"min = 0, max = 1, example = 0.05"
+H	nohistory	general	 Do not add this command to sanpi history. 	local_config.conf
+p	progArgs	general	 arguments that can be passed to specific commands.	"ucsc = chr in the file, ensembl = no chr in the file"
+n	procs	general	 total processors (threads)	flag: go incognito
+m	mem	general	 total memory in MB	""" --normalisation RPKM """
+				
+F	farm	hpc	 start the command in farm	
+x	command	hpc	 Command to be run. Used by farmsub.	
+q	queue	hpc	" queue type [normal,small,long,basement,yesterday]"	
+a	array	hpc	 [file of commands]. - Runs each line in the file 	
+W	walltime	hpc	" [walltime, hh:mm] - Set a timed job"	
+T	concurrent	hpc	 [total number of concurrent array jobs] - if -a is specified you this to set number of jobs. 	
+j	waitForJob	hpc	 [job_name] - Job name to wait.	
+w	wait	hpc	 no args. Wait for the job to finish	
+c	comments	hpc	 sample ids or names to be added	
+G	farmgroup	hpc	" farmgroup; farm3 = team163-grp [default], cgp2-farm-login = team163"	

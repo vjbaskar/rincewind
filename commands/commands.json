@@ -1,0 +1,27 @@
+{
+   "searchfile": {
+        "command_name": "searchfile",
+        "type": "system",
+        "command": "find . -name {filename} -print",
+        "short_help": "Finds a file in the linux system",
+        "long_help": "",
+        "mandatory_args": {
+            "filename": "name of the file you want to search", 
+            "args": "Any other args"
+        },
+        "optional_args": {
+            "title": "Any title"
+        },
+        "is_multiple": 0
+   },
+   "echo": {
+    "command_name": "echo",
+    "type": "system",
+    "command": "find . -name {filename} -print",
+    "short_help": "simple echo",
+    "long_help": "",
+    "mandatory_args": ["val"],
+    "optional_args": ["title"],
+    "is_multiple": 0
+    }
+}

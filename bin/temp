@@ -1,0 +1,8 @@
+command '/Users/vm11//SOFT/rincewind//bin/mkcommand.py' not found
+
+    Available commands are ...
+    
+system
+------
+searchfile:	Finds a file in the linux system
+echo:	simple echo

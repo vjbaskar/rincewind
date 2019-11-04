@@ -1,0 +1,6 @@
+hub DIMT1_click
+shortLabel DIMT1
+longLabel DIMT1
+genomesFile genomes.txt
+email vm11@sanger.ac.uk
+descriptionUrl desc.html
